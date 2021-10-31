@@ -64,7 +64,7 @@ img {
   list-style: none;
 }
 
-/*---------------body---------------*/
+/*---------------body----------------*/
 .body {
   font-family: "Roboto", sans-serif;
   background-color: var(--accent-color);
