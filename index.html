@@ -87,7 +87,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="button-hero" type="button">Заказать услугу</button>
+          <button class="button-hero" data-modal-open type="button">
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -157,30 +159,39 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="directions">
             <li class="directions-images">
-              <img
-                src="./images/handkeyboard.jpg"
-                alt="Веб-сайты"
-                width="370"
-                height="294"
-              />
+              <div class="directions-info">
+                <img
+                  src="./images/handkeyboard.jpg"
+                  alt="Веб-сайты"
+                  width="370"
+                  height="294"
+                />
+                <p class="directions-name">Десктопные приложения</p>
+              </div>
             </li>
 
             <li class="directions-images">
-              <img
-                src="./images/handphone.jpg"
-                alt="Приложения"
-                width="370"
-                height="294"
-              />
+              <div class="directions-info">
+                <img
+                  src="./images/handphone.jpg"
+                  alt="Приложения"
+                  width="370"
+                  height="294"
+                />
+                <p class="directions-name">Мобильные приложения</p>
+              </div>
             </li>
 
             <li class="directions-images">
-              <img
-                src="./images/handtablet.jpg"
-                alt="Дизайн"
-                width="370"
-                height="294"
-              />
+              <div class="directions-info">
+                <img
+                  src="./images/handtablet.jpg"
+                  alt="Дизайн"
+                  width="370"
+                  height="294"
+                />
+                <p class="directions-name">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -508,5 +519,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-close-icon" width="11px" height="11px">
+            <use href="./images/sprite.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </body>
+  <script src="./js/modal.js"></script>
 </html>
