@@ -136,6 +136,17 @@ img {
   color: var(--hover-color);
 }
 
+.current:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  bottom: -32px;
+  left: 0;
+}
+
 .site-nav .link {
   text-decoration: none;
   font-weight: 500;
@@ -149,6 +160,10 @@ img {
 .menu-item,
 .contacts-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.menu-item {
+  position: relative;
 }
 
 .navigation {
